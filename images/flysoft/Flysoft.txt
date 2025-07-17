@@ -1,0 +1,6 @@
+Info@flysofts.com
+iAvrP01yK$14@20R*
+
+
+Pop: mail.flysofts.com
+amtp: mail.flysofts.com port 587
