@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Services - Managed Services</title>
+
+</head>
+
+<body id="home">
+    <header class="hero blog">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo">
+                <span class="text-primary"><img src="images/home/flysoft.png" alt="" class="vhlogo"></span>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#cases">Services</a></li>
+                    <li><a href="index.html#jobs">Jobs</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>Services</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="post">
+            <h2>Managed Services</h2>
+            <!--<p class="meta">
+                <i class="fas fa-user"></i> Posted by <strong>John Doe</strong> | April 19 2020
+            </p> -->
+            <img src="/images/cases/cases7.jpg" alt="">
+            <p>
+                With our managed services, we offer a comprehensive solution to your staffing needs. We understand that
+                managing your workforce can be time-consuming and resource-intensive. That's why we take care of the
+                entire staffing process on your behalf. Our team of experts becomes an extension of your team, working
+                closely with you to understand your requirements, develop customized staffing strategies, and execute
+                them seamlessly. From talent acquisition and onboarding to training, performance management, and even
+                offboarding, we handle every aspect of your workforce management, ensuring a smooth and efficient
+                experience. By entrusting us with your staffing needs, you can save valuable time, reduce administrative
+                burden, and optimize your workforce for maximum productivity.
+            </p>
+            <p>
+                <b>How do we improve your operations and cut your expenses.</b>
+                <li>Comprehensive staffing solutions that handle the entire staffing process </li>
+                <li>Become an extension of your team to ensure seamless staffing experience </li>
+                <li>Save time and reduce administrative burden </li>
+                <li>Optimize workforce for maximum productivity </li>
+                <li>Services include talent acquisition, onboarding, training, and performance management </li>
+            </p>
+            <p>
+                <a href="index.html">Click here to go back</a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="https://www.linkedin.com/company/flysofts"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p> Copyright &copy; 2023 - Flysoft </p>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled = false;
+
+        window.onscroll = function () {
+            if (window.pageYOffset > 100) {
+                navbar.classList.remove('top');
+                if (!scrolled) {
+                    navbar.style.transform = 'translateY(-70px)';
+                }
+                setTimeout(function () {
+                    navbar.style.transform = 'translateY(0)';
+                    scrolled = true;
+                }, 200);
+            }
+            else {
+                navbar.classList.add('top');
+                scrolled = false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

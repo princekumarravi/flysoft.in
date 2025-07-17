@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Services - Recruitment Services</title>
+
+</head>
+
+<body id="home">
+    <header class="hero blog">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo">
+                <span class="text-primary"><img src="images/home/flysoft.png" alt="" class="vhlogo"></span>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#cases">Services</a></li>
+                    <li><a href="index.html#jobs">Jobs</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>Services</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="post">
+            <h2>Recruitment Services</h2>
+            <!--<p class="meta">
+                <i class="fas fa-user"></i> Posted by <strong>John Doe</strong> | April 19 2020
+            </p> -->
+            <img src="/images/cases/cases1.jpg" alt="">
+            <p>
+                At FLYSOFT, we understand that finding the right talent for your organization is crucial
+                for success. Our recruitment services are designed to go beyond simply filling vacancies. We take the
+                time to understand your company culture, values, and specific requirements to ensure we find candidates
+                who not only possess the necessary skills and qualifications but also align with your organizational
+                goals. Our dedicated team of recruiters employs a multi-faceted approach, leveraging a combination of
+                technology, industry knowledge, and a vast network of professionals to identify, attract, and engage top
+                talent across various industries and job functions. From sourcing and screening candidates to conducting
+                interviews and facilitating the selection process, we handle the entire recruitment lifecycle, making it
+                easier for you to focus on core business activities.
+            </p><br />
+            <p>
+                <b>What do we provide:</b>
+                <li>Tailored recruitment solutions to meet your hiring needs </li>
+                <li>Utilize a comprehensive approach to identify, attract, and engage top talent </li>
+                <li>Vast network and industry expertise for candidate sourcing </li>
+                <li>Cutting-edge techniques and tools for efficient candidate screening </li>
+                <li>Dedicated team of recruiters managing the entire recruitment lifecycle </li>
+
+            </p><br />
+            <p>
+                <b>Benefits of Partnering with FLYSOFT.</b>
+                <br />
+                <li>Quality CV’s scrutinized before processing</li>
+                <li>Delivery of Resources’ within Stipulated time frame to ensure there is no billing loss</li>
+                <li>Passive candidates targeted from market</li>
+                <li>Interview Coordination (Support Walk-in Interview’s)</li>
+                <li>Post Selection, Document Collection</li>
+                <li>Reference Check done, post offer Generation</li>
+            </p>
+            <p>
+                <a href="index.html">Click here to go back</a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="https://www.linkedin.com/company/flysofts"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p> Copyright &copy; 2023 - Flysoft </p>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled = false;
+
+        window.onscroll = function () {
+            if (window.pageYOffset > 100) {
+                navbar.classList.remove('top');
+                if (!scrolled) {
+                    navbar.style.transform = 'translateY(-70px)';
+                }
+                setTimeout(function () {
+                    navbar.style.transform = 'translateY(0)';
+                    scrolled = true;
+                }, 200);
+            }
+            else {
+                navbar.classList.add('top');
+                scrolled = false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

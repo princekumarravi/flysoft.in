@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Services - Recruitment Process Outsourcing</title>
+
+</head>
+
+<body id="home">
+    <header class="hero blog">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo">
+                <span class="text-primary"><img src="images/home/flysoft.png" alt="" class="vhlogo"></span>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#cases">Services</a></li>
+                    <li><a href="index.html#jobs">Jobs</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>Services</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="post">
+            <h2>Recruitment Process Outsourcing</h2>
+            <!--<p class="meta">
+                <i class="fas fa-user"></i> Posted by <strong>John Doe</strong> | April 19 2020
+            </p> -->
+            <img src="/images/cases/cases8.jpg" alt="">
+            <p>
+                Outsourcing your recruitment process to Flysoft can provide significant benefits for your
+                organization. Our Recruitment Process Outsourcing (RPO) services offer a comprehensive solution that
+                goes beyond traditional staffing. We take a strategic and consultative approach to understand your
+                talent acquisition needs, challenges, and goals. By partnering with us, you gain access to our extensive
+                resources, industry knowledge, and proven methodologies. We handle everything from candidate sourcing
+                and screening to interview coordination, offer management, and even employer branding. Our RPO services
+                are designed to improve your hiring efficiency, reduce costs, and enhance candidate quality. With our
+                dedicated team working as an extension of your HR department, you can focus on core business activities
+                while we take care of attracting, assessing, and delivering top talent to your organization.
+            </p>
+            <p>
+                <b>How we can help you: </b>
+                <li> Strategic and consultative approach to your talent acquisition needs </li>
+                <li> Outsourcing of the entire recruitment process for efficiency </li>
+                <li> Access to extensive resources, industry knowledge, and proven methodologies </li>
+                <li> Improved hiring efficiency, reduced costs, and enhanced candidate quality </li>
+                <li> Services include candidate sourcing, screening, interview coordination, and offer management </li>
+            </p>
+            <p>
+                <a href="index.html">Click here to go back</a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="https://www.linkedin.com/company/flysofts"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p> Copyright &copy; 2023 - Flysoft </p>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled = false;
+
+        window.onscroll = function () {
+            if (window.pageYOffset > 100) {
+                navbar.classList.remove('top');
+                if (!scrolled) {
+                    navbar.style.transform = 'translateY(-70px)';
+                }
+                setTimeout(function () {
+                    navbar.style.transform = 'translateY(0)';
+                    scrolled = true;
+                }, 200);
+            }
+            else {
+                navbar.classList.add('top');
+                scrolled = false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
